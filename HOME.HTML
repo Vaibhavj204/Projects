@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        .banner {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .navbar {
+            width: 85%;
+            margin: auto: padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            width: 120px;
+            cursor: pointer;
+        }
+
+        .navbar ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 20px;
+            postion: relative;
+        }
+
+            .navbar ul li a {
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+            }
+
+
+        navbar ul li::after {
+            content: '';
+            height: 3px;
+            width: 100%;
+            background: blue;
+            postion: absolute;
+            left: 0;
+            bottom: -10px;
+        }
+
+        .content {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            color: white;
+        }
+
+            .content h1 {
+                font-size: 70px;
+                margin-top: 80px;
+            }
+
+            .content p {
+                margin: 20px auto;
+                font-weigth: 100;
+                line-weight: 25px;
+            }
+
+        button {
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid black;
+            background: transparent;
+            color: white cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+
+        span {
+            background: grey;
+            height: 100%;
+            width: 100%;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+
+        button:hover span {
+            width: 100%;
+        }
+
+        button:hover {
+            border: none;
+        }
+
+        .border{
+            border: 1.5px solid transparent;
+        }
+        .border:hover{
+            border: 1.5px solid white;
+        }
+
+
+    </style>
+    </head>
+
+    <body>
+        <div class="banner">
+
+            <div class="navbar">
+                <img src="fortress-investment-group-llc-logo-vector.png" class="logo" width="60" height="60">
+                <ul>
+                    <li class="border"><a href="#">home</a></li>
+                    <li class="border"><a href="file:///C:/Users/jagtp/Desktop/final%20project/explore.html">forts</a></li>
+                    <li><a href="file:///C:/Users/jagtp/Desktop/final%20project/ABOUT%20US.HTML">contact us</a></li>
+                    <li><a href="file:///C:/Users/jagtp/Desktop/final%20project/contact%20us%20.html">about us</a></li>
+                </ul>
+            </div>
+
+            <div class="content ">
+                <h1>TOP 20 FORTS</h1>
+                <p>Explore the top 20 most famous forts in india</p>
+
+                <div>
+                    <button type="button">
+                        <span></span>
+                        <A HREF="file:///C:/Users/jagtp/Desktop/final%20project/explore.html">
+                            EXPLORE
+                    </button>
+
+                   
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </body>
+</html>
